@@ -18,7 +18,7 @@ int main() {
             scanf("%d", &B[i][j]);
 
     do {
-        printf("\n--- MATRIX OPERATIONS ---\n");
+        printf("\nMATRIX OPERATIONS\n");
         printf("1. Addition\n");
         printf("2. Subtraction\n");
         printf("3. Multiplication\n");
