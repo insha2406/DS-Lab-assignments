@@ -6,9 +6,9 @@ int convertToCompact(int rows, int cols, int matrix[MAX][MAX], int compact[MAX_T
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             if(matrix[i][j] != 0) {
-                compact[k][0] = i;       // row
-                compact[k][1] = j;       // column
-                compact[k][2] = matrix[i][j]; // value
+                compact[k][0] = i;       //for row
+                compact[k][1] = j;       // cfor column
+                compact[k][2] = matrix[i][j];
                 k++;
             }
         }
@@ -21,7 +21,6 @@ void displayCompact(int compact[MAX_TERMS][3], int count) {
         printf("%d %d %d\n", compact[i][0], compact[i][1], compact[i][2]);
     }
 }
-
 // Simple transpose
 void simpleTranspose(int compact[MAX_TERMS][3], int count) {
     printf("\nSimple Transpose (row col value):\n");
